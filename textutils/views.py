@@ -78,3 +78,12 @@ def analyze(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def contactus(request):
+    name = request.POST.get('name')
+    email = request.POST.get('email')
+    message =request.POST.get('message')
+request.POST.get('message')
+    if method == POST :
+        paras = {'name':name}
+        return render(request,'feedbackdone.html',params)
